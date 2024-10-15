@@ -1,101 +1,111 @@
+"use client";
 import Image from "next/image";
+import Navbar from "@/components/Navbar";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+    <div>
+      <Navbar />
+      <div className="">
+        <section id="hero" className="mt-[100px]">
+          <div className="">
+            <div className="">
+              <h1 className=" text-5xl text-customColor1">The Nirvana</h1>
+              <h3 className="text-3xl text-customColor1">The place to be</h3>
+              <h6 className="text-1xl  text-customColor1">
+                A place where work and play all work together
+              </h6>
+              <p className=" text-sm text-customColor1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Blanditiis, culpa incidunt? Quidem, temporibus alias quaerat
+                dolorem, reprehenderit qui nesciunt id quo suscipit culpa
+                veritatis magni error eos vero corporis provident!
+              </p>
+            </div>
+            <Image src="/home-1.png" width={100} height={100} alt="home-1" />
+            <Image src="/home-2.png" width={100} height={100} alt="home-2" />
+          </div>
+        </section>
+        <section id="about">
+          <h1 className="-mt-24 mb-20 ml-60 text-5xl text-customColor1">
+            About Us
+          </h1>
+          <div className="-mt-10 mb-16 flex justify-center">
             <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+              src="/about-img.png"
+              width={1055}
+              height={232}
+              alt="about image"
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+          </div>
+          <div className="flex justify-around gap-10">
+            <div className="flex flex-col text-center text-customColor1">
+              <h1 className="mb-4 text-2xl font-semibold">About The Nirvana</h1>
+              <p className="ml-14 w-[80%] text-center">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet
+                impedit ipsam corporis non adipisci deleniti? Ut hic facere ex,
+                repellat illum odio debitis officia blanditiis placeat quae
+                cumque inventore officiis! Lorem ipsum dolor, sit amet
+                consectetur adipisicing elit. Exercitationem maiores aperiam,
+                quia delectus voluptatem voluptatibus ea. Nobis unde tempora
+                doloremque laboriosam aliquam dignissimos odio, officiis ea
+                consectetur quis asperiores aut.
+              </p>
+            </div>
+            <div className="flex flex-col text-center text-customColor1">
+              <h1 className="mb-4 text-2xl font-semibold">
+                What's in and around the area
+              </h1>
+              <p className="ml-10 w-[80%] text-center">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga
+                placeat tempora, quos numquam voluptatum expedita iusto
+                cupiditate voluptas aliquid provident eligendi nobis ducimus
+                eaque voluptatibus fugiat molestiae nisi pariatur animi! Lorem
+                ipsum dolor sit amet consectetur adipisicing elit. Beatae
+                delectus autem, repellat ratione consequatur hic maxime ipsam
+                voluptatem eius, totam deserunt dicta obcaecati labore atque.
+                Accusantium quidem sit excepturi ullam.
+              </p>
+            </div>
+          </div>
+
+          <div className="flex flex-col justify-center text-customColor1">
+            <h1 className="mt-20 text-center text-2xl font-semibold">
+              Location
+              <span className="ml-2">
+                <FontAwesomeIcon icon={faLocationDot} />
+              </span>
+            </h1>
+            <p className="mx-40 mb-20 flex flex-1 items-center justify-center">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis
+              a corporis modi nesciunt perspiciatis et, iste suscipit quos
+              expedita, ut nisi aliquam obcaecati voluptas tenetur laudantium
+              amet non officiis consectetur. Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Repudiandae vero corrupti iure ea
+              dolore asperiores voluptate sunt nesciunt eius praesentium
+              architecto, illum fugiat quos earum hic cumque et harum nam. Lorem
+              ipsum dolor sit amet consectetur, adipisicing elit. Vitae
+              aspernatur ratione ut maxime, exercitationem itaque assumenda
+              excepturi mollitia ipsam non sed animi temporibus deleniti
+              praesentium distinctio dolores officiis, commodi necessitatibus.
+            </p>
+          </div>
+        </section>
+        <section id="services">
+          <h1>services</h1>
+        </section>
+        <section id="room-type">
+          <h1>room type</h1>
+        </section>
+        <section id="testimonials">
+          <h1>testimonials</h1>
+        </section>
+        <section id="contact">
+          <h1>contact</h1>
+        </section>
+      </div>
     </div>
   );
 }
